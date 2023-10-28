@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Home from "./components/Home"
+import MyRoute from "./Router"
+import Practice from "./components/Practice"
+import ReactProject1 from './components/ReactProject1';
 
 function App() {
+  // const [firstName, SetFirstName] = useState("");
+  // const [LastName, SetLastName] = useState("");
+  // console.log(firstName)
+  // console.log(LastName)
+  // function clickFirstHandler(event) {
+  //   // console.log("firstname printing")
+  //   // console.log(event.target.value)
+  //   SetFirstName(event.target.value)
+  // }
+  // function clickLastHandler(event) {
+  //   // console.log("last name rinting")
+  //   // console.log(event.target.value)
+  //   SetLastName(event.target.value)
+  // }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {/* <Home />
+      <MyRoute/> */}
+      {/* <ReactProject1 /> */}
+      {/* <Form /> */}
+<Practice/>
+<ReactProject1/>
+
+    </>
+  )
+
 }
 
-export default App;
+export default App
